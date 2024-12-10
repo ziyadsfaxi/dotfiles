@@ -33,6 +33,7 @@ plugins=(
     rsync
     tmux
     z
+    zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -52,15 +53,16 @@ path=(
     $HOME/.cargo/bin
     ./vendor/bin
     $HOME/.local/share/bob/nvim-bin
-    $HOME/Code/jessarcher/dotfiles/scripts
+    $HOME/dotfiles/scripts
     ${ANDROID_HOME}tools/
     ${ANDROID_HOME}platform-tools/
+    /opt/homebrew/bin
     $path
 )
 
 setopt auto_cd
 cdpath=(
-    $HOME/Code
+    $HOME/dotfiles
 )
 
 zstyle ':completion:*' group-name ''
@@ -167,3 +169,5 @@ if [[ $- == *i* && $0 == '/usr/bin/zsh' ]]; then
 fi
 
 # vim: nospell
+export PATH="/Users/ziyadsfaxi/.config/herd-lite/bin:$PATH"
+export PHP_INI_SCAN_DIR="/Users/ziyadsfaxi/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
