@@ -1,6 +1,6 @@
 return {
   "neovim/nvim-lspconfig",
-  event = "VeryLazy",
+  -- event = "VeryLazy",
   opts = {
     servers = {
       tailwindcss = {
@@ -20,7 +20,7 @@ return {
       volar = {
         init_options = {
           vue = {
-            hybridMode = false,
+            hybridMode = true,
           },
         },
         on_attach = function(client, bufnr)
@@ -29,15 +29,8 @@ return {
         end,
       },
 
-      tsserver = {
-        enabled = false,
-      },
-
-      vtsls = {
-        enabled = false,
-      },
-
       ts_ls = {
+        enabled = false,
         init_options = {
           plugins = {
             {
