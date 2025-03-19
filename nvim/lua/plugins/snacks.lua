@@ -17,5 +17,12 @@ return {
       end,
       desc = "Smart Find Files",
     },
+    {
+      "<leader>T",
+      function()
+        Snacks.terminal.toggle()
+      end,
+      desc = "Toggle Terminal",
+    },
   },
 }
