@@ -5,5 +5,3 @@
 vim.keymap.del("n", "<leader>cd")
 
 vim.keymap.set("n", "<leader>ld", vim.diagnostic.open_float, { desc = "Line Diagnostics" })
-
-vim.keymap.del("n", "<leader><space>")
