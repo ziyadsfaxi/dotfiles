@@ -1,13 +1,14 @@
 return {
   "neovim/nvim-lspconfig",
-  -- event = "VeryLazy",
+  event = "VeryLazy",
   opts = {
     servers = {
       tailwindcss = {
-        filetypes_exclude = { "css", "sass" },
+        filetypes_exclude = { "css", "sass", "php" },
       },
 
       intelephense = {
+        enabled = false,
         commands = {
           IntelephenseIndex = {
             function()
@@ -18,35 +19,51 @@ return {
       },
 
       volar = {
-        -- init_options = {
-        --   vue = {
-        --     hybridMode = true,
-        --   },
-        -- },
+        init_options = {
+          vue = {
+            hybridMode = true,
+          },
+        },
         -- on_attach = function(client, bufnr)
         --   client.server_capabilities.documentFormattingProvider = false
         --   client.server_capabilities.documentRangeFormattingProvider = false
         -- end,
       },
 
-      ts_ls = {
+      vtsls = {
         enabled = false,
+      },
+
+      ts_ls = {
         init_options = {
           plugins = {
             {
               name = "@vue/typescript-plugin",
               location = LazyVim.get_pkg_path("vue-language-server", "/node_modules/@vue/language-server"),
-              languages = { "javascript", "typescript", "vue" },
+              languages = { "vue" },
             },
           },
         },
+
+        settings = {
+          typescript = {
+
+            inlayHints = {
+              includeInlayParameterNameHints = "all",
+              includeInlayParameterNameHintsWhenArgumentMatchesName = true,
+              includeInlayFunctionParameterTypeHints = true,
+              includeInlayVariableTypeHints = true,
+              includeInlayVariableTypeHintsWhenTypeMatchesName = true,
+              includeInlayPropertyDeclarationTypeHints = true,
+              includeInlayFunctionLikeReturnTypeHints = true,
+              includeInlayEnumMemberValueHints = true,
+            },
+          },
+        },
+
         filetypes = {
           "javascript",
-          "javascriptreact",
-          "javascript.jsx",
           "typescript",
-          "typescriptreact",
-          "typescript.tsx",
           "vue",
         },
       },

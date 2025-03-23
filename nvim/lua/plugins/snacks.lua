@@ -6,7 +6,7 @@ return {
     {
       "<leader><space>",
       function()
-        Snacks.picker.buffers()
+        Snacks.picker.buffers({ current = false })
       end,
       desc = "Buffers",
     },

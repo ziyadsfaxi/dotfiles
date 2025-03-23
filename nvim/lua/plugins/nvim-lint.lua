@@ -7,7 +7,7 @@ return {
       typescript = { "eslint" },
       typescriptreact = { "eslint" },
       vue = { "eslint" },
-      php = { "phpstan" },
+      php = {},
     },
   },
 }
