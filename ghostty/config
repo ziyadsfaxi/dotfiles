@@ -10,5 +10,5 @@ mouse-hide-while-typing = true
 
 theme = catppuccin-mocha.conf
 
-keybind = super+up=scroll_page_up
+keybind=super+up=scroll_page_up
 
