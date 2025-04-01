@@ -34,6 +34,7 @@ plugins=(
     tmux
     z
     zsh-autosuggestions
+    zsh-vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -43,7 +44,7 @@ source $ZSH/oh-my-zsh.sh
 #--------------------------------------------------------------------------
 
 # Decrease delay that vi-mode waits for the end of a key sequence
-export KEYTIMEOUT=15
+# export KEYTIMEOUT=15
 
 typeset -U path cdpath fpath
 path=(
@@ -97,6 +98,7 @@ alias paste="xclip -o -selection clipboard"
 alias cat="bat"
 alias webcam="gphoto2 --stdout --capture-movie | ffmpeg -i - -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video2"
 alias sail='[ -f sail ] && sail || vendor/bin/sail'
+alias cd="z"
 
 # Laravel
 alias a="artisan"
