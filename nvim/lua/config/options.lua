@@ -11,4 +11,8 @@ if vim.fn.has("win32") == 1 or vim.fn.has("win64") == 1 then
   vim.o.shellpipe = "| %s"
   vim.o.shellquote = ""
   vim.o.shellxquote = ""
+
+  vim.defer_fn(function()
+    vim.opt.shellslash = false
+  end, 5000)
 end

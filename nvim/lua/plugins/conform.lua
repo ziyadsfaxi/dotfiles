@@ -7,6 +7,13 @@ return {
       javascript = { "prettier", stop_after_first = true },
       typescript = { "prettier", stop_after_first = true },
       typescriptreact = { "prettier", stop_after_first = true },
+      cs = { "csharpier" },
+    },
+    formatters = {
+      csharpier = {
+        command = "dotnet-csharpier",
+        args = { "--write-stdout" },
+      },
     },
   },
   keys = {
