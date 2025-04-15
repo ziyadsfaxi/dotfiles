@@ -1,11 +1,3 @@
-#
-#                          ⢸⣦⡈⠻⣿⣿⣿⣶⣄
-#                          ⢸⣿⣿⣦⡈⠻⣿⣿⣿⣷⣄
-#                    ⣀⣀⣀⣀⣀⣀⣼⣿⣿⣿⣿ ⠈⠻⣿⣿⣿⣷⣄
-#                    ⠈⠻⣿⣿⣿⣿⣿⡿⠿⠛⠁   ⠈⠻⢿⣿⣿⣷⣄
-#
-# Personal zsh configuration of Jess Archer <jess@jessarcher.com>
-
 #--------------------------------------------------------------------------
 # Oh My Zsh
 #--------------------------------------------------------------------------
@@ -98,7 +90,6 @@ alias paste="xclip -o -selection clipboard"
 alias cat="bat"
 alias webcam="gphoto2 --stdout --capture-movie | ffmpeg -i - -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video2"
 alias sail='[ -f sail ] && sail || vendor/bin/sail'
-alias cd="z"
 
 # Laravel
 alias a="artisan"
@@ -173,3 +164,5 @@ fi
 # vim: nospell
 export PATH="/Users/ziyadsfaxi/.config/herd-lite/bin:$PATH"
 export PHP_INI_SCAN_DIR="/Users/ziyadsfaxi/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
+
+eval "$(starship init zsh)"

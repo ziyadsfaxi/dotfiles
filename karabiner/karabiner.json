@@ -1,0 +1,81 @@
+{
+  "global": { "show_in_menu_bar": false },
+  "profiles": [
+    {
+      "complex_modifications": {
+        "parameters": {
+          "basic.to_if_alone_timeout_milliseconds": 200,
+          "basic.to_if_held_down_threshold_milliseconds": 200
+        },
+        "rules": [
+          {
+            "description": "Caps Lock to Esc and Ctrl",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "caps_lock",
+                  "modifiers": { "optional": ["any"] }
+                },
+                "to": [{ "key_code": "escape" }],
+                "to_if_held_down": [{ "key_code": "left_control" }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Map Shift + Escape to Tilde (~) (Nuphy60 Only)",
+            "conditions": [
+              {
+                "type": "device_if",
+                "identifiers": {
+                  "device_address": "dd-30-94-d6-08-f9"
+                }
+              }
+            ],
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "escape",
+                  "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["any"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "grave_accent_and_tilde",
+                    "modifiers": ["left_shift"]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "devices": [
+        {
+          "disable_built_in_keyboard_if_exists": true,
+          "identifiers": {
+            "device_address": "dd-30-94-d6-08-f9",
+            "is_keyboard": true,
+            "is_pointing_device": true
+          },
+          "ignore": false
+        },
+        {
+          "identifiers": {
+            "is_pointing_device": true,
+            "product_id": 13330,
+            "vendor_id": 14
+          },
+          "ignore": false,
+          "mouse_flip_vertical_wheel": true
+        }
+      ],
+      "name": "Default profile",
+      "selected": true,
+      "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
+    }
+  ]
+}
