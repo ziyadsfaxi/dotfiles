@@ -32,15 +32,15 @@
             ]
           },
           {
-            "description": "CapsLock -> Esc (Tap) and -> Ctrl (Hold)",
+            "description": "CapsLock -> Esc (Alone) and -> Ctrl (Not Alone)",
             "manipulators": [
               {
                 "from": {
                   "key_code": "caps_lock",
                   "modifiers": { "optional": ["any"] }
                 },
-                "to": [{ "key_code": "escape" }],
-                "to_if_held_down": [{ "key_code": "left_control" }],
+                "to_if_alone": [{ "key_code": "escape" }],
+                "to": [{ "key_code": "left_control" }],
                 "type": "basic"
               }
             ]
