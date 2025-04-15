@@ -9,7 +9,30 @@
         },
         "rules": [
           {
-            "description": "Caps Lock to Esc and Ctrl",
+            "manipulators": [
+              {
+                "description": "Tab -> Hyper (Hold)",
+                "from": {
+                  "key_code": "tab",
+                  "modifiers": { "optional": ["any"] }
+                },
+                "to_if_alone": [{ "key_code": "tab" }],
+                "to": [
+                  {
+                    "key_code": "right_shift",
+                    "modifiers": [
+                      "right_command",
+                      "right_control",
+                      "right_option"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "CapsLock -> Esc (Tap) and -> Ctrl (Hold)",
             "manipulators": [
               {
                 "from": {
@@ -23,18 +46,16 @@
             ]
           },
           {
-            "description": "Map Shift + Escape to Tilde (~) (Nuphy60 Only)",
             "conditions": [
               {
-                "type": "device_if",
-                "identifiers": {
-                  "device_address": "dd-30-94-d6-08-f9"
-                }
+                "identifiers": { "device_address": "dd-30-94-d6-08-f9" },
+                "type": "device_if"
               }
             ],
+            "description": "Map Shift + Escape to Tilde (~) (Nuphy60 Only)",
+            "enabled": false,
             "manipulators": [
               {
-                "type": "basic",
                 "from": {
                   "key_code": "escape",
                   "modifiers": {
@@ -47,7 +68,8 @@
                     "key_code": "grave_accent_and_tilde",
                     "modifiers": ["left_shift"]
                   }
-                ]
+                ],
+                "type": "basic"
               }
             ]
           }
