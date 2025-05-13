@@ -5,7 +5,6 @@ return {
       "phpactor",
       "cspell",
       "csharpier",
-      "netcoredbg",
       "php-debug-adapter",
       "roslyn",
     },
