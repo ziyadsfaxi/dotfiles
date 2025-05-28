@@ -1,3 +1,7 @@
+do
+  return {}
+end
+
 return {
   "seblyng/roslyn.nvim",
   ft = { "cs", "razor" },

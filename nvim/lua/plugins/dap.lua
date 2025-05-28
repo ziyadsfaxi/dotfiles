@@ -24,6 +24,9 @@ return {
         detached = false,
       },
     }
+
+    require("dap").defaults.cs.exception_breakpoints = { "uncaught" }
+
     -- end
   end,
 }
