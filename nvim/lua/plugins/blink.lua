@@ -2,15 +2,15 @@ return {
   "saghen/blink.cmp",
   opts = {
     sources = {
-      default = { "copilot" },
+      -- default = { "copilot" },
       providers = {
-        copilot = {
-          name = "copilot",
-          module = "blink-cmp-copilot",
-          kind = "Copilot",
-          score_offset = -1,
-          async = true,
-        },
+        -- copilot = {
+        --   name = "copilot",
+        --   module = "blink-cmp-copilot",
+        --   kind = "Copilot",
+        --   score_offset = -1,
+        --   async = true,
+        -- },
       },
     },
   },

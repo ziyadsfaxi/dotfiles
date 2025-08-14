@@ -66,7 +66,6 @@ zstyle ':completion:*:complete:(cd|pushd):*' tag-order \
 
 export EDITOR=nvim
 export GIT_EDITOR=nvim
-export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
 export ARTISAN_OPEN_ON_MAKE_EDITOR=nvr
 # export FZF_DEFAULT_COMMAND='ag -u -g ""'
 # export FZF_DEFAULT_OPTS='
@@ -169,5 +168,7 @@ export PHP_INI_SCAN_DIR="/Users/ziyadsfaxi/.config/herd-lite/bin:$PHP_INI_SCAN_D
 export GEMINI_API_KEY="AIzaSyCrxICY2AUSg6_OQhq8eApgR10Fb7syBY4"
 
 export DOTNET_ROOT="/usr/local/share/dotnet"
+
+export PATH="$PATH:/Users/ziyadsfaxi/.dotnet/tools"
 
 eval "$(starship init zsh)"
