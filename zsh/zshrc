@@ -164,9 +164,6 @@ fi
 export PATH="/Users/ziyadsfaxi/.config/herd-lite/bin:$PATH"
 export PHP_INI_SCAN_DIR="/Users/ziyadsfaxi/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
 
-# GEMINI
-export GEMINI_API_KEY="AIzaSyCrxICY2AUSg6_OQhq8eApgR10Fb7syBY4"
-
 export DOTNET_ROOT="/usr/local/share/dotnet"
 
 export PATH="$PATH:/Users/ziyadsfaxi/.dotnet/tools"
