@@ -16,3 +16,11 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
   pattern = "*.razor",
   command = "set filetype=html.cshtml.razor",
 })
+
+-- Auto reload file if changed outside of Neovim
+vim.api.nvim_create_augroup("AutoRead", { clear = true })
+vim.api.nvim_create_autocmd({ "FocusGained", "BufEnter" }, {
+  group = "AutoRead",
+  pattern = "*",
+  command = "checktime",
+})

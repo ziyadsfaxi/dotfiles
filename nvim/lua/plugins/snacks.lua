@@ -1,7 +1,22 @@
 return {
   "folke/snacks.nvim",
 
-  opts = {},
+  opts = {
+    picker = {
+      files = {
+        hidden = true,
+        git_ignore = true,
+        exclude = {
+          "vendor",
+          "node_modules",
+          "dist",
+          ".idea",
+          "*.lock",
+          ".cache",
+        },
+      },
+    },
+  },
   keys = {
     {
       "<leader><space>",

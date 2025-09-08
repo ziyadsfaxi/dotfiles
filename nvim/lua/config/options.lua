@@ -3,6 +3,7 @@
 -- Add any additional options here
 
 vim.opt.foldmethod = "syntax"
+vim.o.autoread = true
 
 -- enable folding for C#
 vim.cmd("autocmd FileType cs setlocal foldmethod=expr foldexpr=nvim_treesitter#foldexpr() foldlevel=99")

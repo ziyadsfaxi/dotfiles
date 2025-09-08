@@ -1,6 +1,6 @@
 hyper - r : yabai -m space --focus recent
-hyper - n : yabai -m space --focus next || yabai -m space --focus first
-hyper - p : yabai -m space --focus prev || yabai -m space --focus last
+hyper - n : ~/dotfiles/yabai/focus-next-local-space.sh
+hyper - p : ~/dotfiles/yabai/focus-prev-local-space.sh
 
 hyper - d : yabai -m display --focus recent
 
@@ -8,4 +8,4 @@ hyper - j : yabai -m window --focus south
 hyper - k : yabai -m window --focus north
 hyper - h : yabai -m window --focus west
 hyper - l : yabai -m window --focus east
-hyper - m: yabai -m window --toggle zoom-fullscreen
+hyper - m: yabai -m window --toggle zoom-parent

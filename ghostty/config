@@ -1,9 +1,9 @@
 font-family = JetBrains Mono NFM
-#font-family-bold = OpenDyslexic Nerd Font Bold
-#font-family-italic = OpenDyslexic Nerd Font Italic
-#font-family-bold-italic = OpenDyslexic Nerd Font Bold Italic
+font-family-bold = JetBrainsMono NFM Bold
+font-family-italic = JetBrainsMono NFM Italic
+font-family-bold-italic = JetBrainsMono NFM Bold Italic
 
-font-size = 15
+font-size = 16
 #window-decoration = none
 fullscreen = true
 mouse-hide-while-typing = true

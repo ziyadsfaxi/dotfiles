@@ -1,0 +1,90 @@
+{
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "editor.minimap.enabled": false,
+    "workbench.editor.showTabs": "single",
+    "vscode-neovim.neovimInitVimPaths.darwin": "~/.config/nvim/init.lua",
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "cSpell.userWords": [
+        "neovim",
+        "Umbraco"
+    ],
+    "apc.electron": {
+        "frame": false,
+        "titleBarStyle": "hiddenInset",
+        "transparent": true,
+        "trafficLightPosition": {
+            /* "x": 7,
+            "y": 5 */
+        },
+    },
+    "apc.stylesheet": {
+        "*": "font-family: JetBrains Mono;",
+        ".editor .title": "background: transparent !important;"
+    },
+    "editor.fontSize": 15,
+    "tailwind-fold.autoFold": true,
+    "vscode-neovim.neovimExecutablePaths.win32": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
+    "vscode-neovim.neovimInitVimPaths.win32": "~\\AppData\\Local\\nvim\\init.lua",
+    "vscode-neovim.ctrlKeysForNormalMode": [
+        "a",
+        "c",
+        "d",
+        "e",
+        "f",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "o",
+        "r",
+        "t",
+        "u",
+        "v",
+        "x",
+        "y",
+        "z",
+        "/",
+        "]",
+        "right",
+        "left",
+        "up",
+        "down",
+        "backspace",
+        "delete"
+    ],
+    "vscode-neovim.ctrlKeysForInsertMode": [
+        "a",
+        "c",
+        "d",
+        "h",
+        "j",
+        "m",
+        "o",
+        "r",
+        "t",
+        "u"
+    ],
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    },
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "workbench.startupEditor": "none",
+    "[blade]": {
+        "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+    },
+    "[aspnetcorerazor]": {},
+    "breadcrumbs.enabled": false,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "laravel-pint.enable": true,
+    "editor.formatOnSave": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "workbench.colorTheme": "Aura Soft Dark"
+}
