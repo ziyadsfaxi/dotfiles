@@ -4,9 +4,10 @@ return {
     ensure_installed = {
       "phpactor",
       "cspell",
-      -- "csharpier",
       "php-debug-adapter",
-      -- "roslyn",
+      "roslyn",
+      "csharpier",
+      "html-lsp",
     },
     registries = {
       "github:mason-org/mason-registry",

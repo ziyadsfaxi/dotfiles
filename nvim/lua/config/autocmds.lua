@@ -7,15 +7,15 @@
 --     require("lint").try_lint()
 --   end,
 -- })
-vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
-  pattern = "*.cshtml",
-  command = "set filetype=html.cshtml.razor",
-})
-
-vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
-  pattern = "*.razor",
-  command = "set filetype=html.cshtml.razor",
-})
+-- vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+--   pattern = "*.cshtml",
+--   command = "set filetype=html.cshtml.razor",
+-- })
+--
+-- vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+--   pattern = "*.razor",
+--   command = "set filetype=html.cshtml.razor",
+-- })
 
 -- Auto reload file if changed outside of Neovim
 vim.api.nvim_create_augroup("AutoRead", { clear = true })

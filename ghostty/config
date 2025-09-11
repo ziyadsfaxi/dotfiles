@@ -3,7 +3,7 @@ font-family-bold = JetBrainsMono NFM Bold
 font-family-italic = JetBrainsMono NFM Italic
 font-family-bold-italic = JetBrainsMono NFM Bold Italic
 
-font-size = 16
+font-size = 18
 #window-decoration = none
 fullscreen = true
 mouse-hide-while-typing = true
