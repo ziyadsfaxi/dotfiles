@@ -24,7 +24,7 @@ plugins=(
     httpie
     rsync
     tmux
-    z
+    # z
     zsh-autosuggestions
     zsh-vi-mode
 )
@@ -167,6 +167,8 @@ export PHP_INI_SCAN_DIR="/Users/ziyadsfaxi/.config/herd-lite/bin:$PHP_INI_SCAN_D
 export DOTNET_ROOT="/usr/local/share/dotnet"
 
 export PATH="$PATH:/Users/ziyadsfaxi/.dotnet/tools"
+
+eval "$(zoxide init --cmd cd zsh)"
 
 eval "$(starship init zsh)"
 

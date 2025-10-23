@@ -14,6 +14,8 @@ yabai -m config mouse_drop_action swap
 
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^Android Emulator$" manage=off
+yabai -m rule --add app="^qemu-system-x86_64$" manage=off
 
 yabai -m config top_padding    8
 yabai -m config bottom_padding 8
