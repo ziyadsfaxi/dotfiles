@@ -5,7 +5,7 @@ return {
   opts = {
     -- your configuration comes here; leave empty for default settings
   },
-  -- ft = { "cshtml", "razor" },
+  ft = { "cshtml", "razor", "cs" },
   dependencies = {
     {
       "tris203/rzls.nvim",

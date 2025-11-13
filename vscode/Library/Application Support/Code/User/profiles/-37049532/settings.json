@@ -1,0 +1,21 @@
+{
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "editor.minimap.enabled": false,
+  // "editor.cursorBlinking": "smooth",
+  // "editor.cursorSmoothCaretAnimation": "on",
+  "editor.fontSize": 15,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
+  "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
+  "git.confirmSync": false,
+  "zenMode.centerLayout": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "zenMode.showTabs": "single",
+  "zenMode.restore": true,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "redhat.telemetry.enabled": true
+}

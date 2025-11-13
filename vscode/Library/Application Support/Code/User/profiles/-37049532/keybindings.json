@@ -1,11 +1,20 @@
 // Place your key bindings in this file to override the defaults
 [
+  {
+    "key": "cmd+shift+t",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "tab",
+    "command": "editor.action.inlineSuggest.commit",
+    "when": "neovim.mode == normal && (editorTextFocus || !inputFocus)"
+  },
   // Search
   {
     "key": "space space",
     "command": "workbench.action.showAllEditors",
     "when": "neovim.mode == normal && (editorTextFocus || !inputFocus)"
-  }, 
+  },
   {
     "key": "space c a",
     "command": "editor.action.quickFix",
@@ -51,27 +60,7 @@
     "command": "editor.action.formatDocument",
     "when": "neovim.mode == normal && editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
   },
-  {
-    "key": "space t",
-    "command": "better-pest.run",
-    "when": "neovim.mode == normal && editorTextFocus && !editorReadonly && !inCompositeEditor"
-  },
-  {
-    "key": "space shift+t",
-    "command": "better-pest.run-file",
-    "when": "neovim.mode == normal && editorTextFocus && !editorReadonly && !inCompositeEditor"
-  },
-  {
-    "key": "space p t",
-    "command": "better-pest.run-previous",
-    "when": "neovim.mode == normal && editorTextFocus && !editorReadonly && !inCompositeEditor"
-  },
-  {
-    "key": "space a t",
-    "command": "better-pest.run-suite",
-    "when": "neovim.mode == normal && editorTextFocus && !editorReadonly && !inCompositeEditor"
-  },
-  // TMUX 
+  // TMUX
   {
     "key": "ctrl-a shift+\\",
     "command": "runCommands",
@@ -94,11 +83,11 @@
   },
   {
     "key": "ctrl+a l",
-    "command": "workbench.action.increaseViewWidth",
+    "command": "workbench.action.increaseViewWidth"
   },
   {
     "key": "ctrl-a h",
-    "command": "workbench.action.decreaseViewWidth",
+    "command": "workbench.action.decreaseViewWidth"
   },
   {
     "key": "ctrl+a j",
@@ -128,6 +117,14 @@
     "key": "ctrl-j",
     "command": "workbench.action.navigateDown"
   },
+  // End TMUX
+  // Lazygit
+  {
+    "key": "space g g",
+    "command": "lazygit-vscode.toggle",
+    "when": "neovim.mode == normal && (editorTextFocus || !inputFocus)"
+  },
+  // End Lazygit
   {
     "key": "space e",
     "command": "runCommands",
@@ -155,4 +152,30 @@
     "when": "neovim.mode == normal && editorTextFocus && foldersViewVisible",
     "command": "workbench.action.toggleSidebarVisibility"
   },
+  // Debugging
+  {
+    "key": "space d c",
+    "command": "workbench.action.debug.start",
+    "when": "neovim.mode == normal && (editorTextFocus || !inputFocus) && !inDebugMode"
+  },
+  {
+    "key": "space d c",
+    "command": "workbench.action.debug.continue",
+    "when": "neovim.mode == normal && (editorTextFocus || !inputFocus) && inDebugMode"
+  },
+  {
+    "key": "space d t",
+    "command": "workbench.action.debug.stop",
+    "when": "neovim.mode == normal && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space d b",
+    "command": "editor.debug.action.toggleBreakpoint",
+    "when": "neovim.mode == normal && (editorTextFocus || !inputFocus)"
+  },
+  {
+    "key": "space d shift+b",
+    "command": "editor.debug.action.conditionalBreakpoint",
+    "when": "neovim.mode == normal && (editorTextFocus || !inputFocus)"
+  }
 ]

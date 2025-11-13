@@ -39,34 +39,6 @@
                                 "type": "basic"
                             }
                         ]
-                    },
-                    {
-                        "conditions": [
-                            {
-                                "identifiers": { "device_address": "dd-30-94-d6-08-f9" },
-                                "type": "device_if"
-                            }
-                        ],
-                        "description": "Map Shift + Escape to Tilde (~) (Nuphy60 Only)",
-                        "enabled": false,
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "escape",
-                                    "modifiers": {
-                                        "mandatory": ["shift"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "grave_accent_and_tilde",
-                                        "modifiers": ["left_shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
                     }
                 ]
             },

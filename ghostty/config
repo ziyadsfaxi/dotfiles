@@ -9,7 +9,7 @@ fullscreen = true
 mouse-hide-while-typing = true
 
 
-theme = catppuccin-mocha.conf
+theme = Monokai Pro Octagon
 
 keybind=super+up=scroll_page_up
 
