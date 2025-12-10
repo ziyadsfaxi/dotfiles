@@ -2,11 +2,11 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 
-vim.opt.foldmethod = "syntax"
-vim.o.autoread = true
+-- vim.opt.foldmethod = "syntax"
+-- vim.o.autoread = true
 
 -- enable folding for C#
-vim.cmd("autocmd FileType cs setlocal foldmethod=expr foldexpr=nvim_treesitter#foldexpr() foldlevel=99")
+-- vim.cmd("autocmd FileType cs setlocal foldmethod=expr foldexpr=nvim_treesitter#foldexpr() foldlevel=99")
 
 -- if windows disable man
 if vim.fn.has("win32") == 1 or vim.fn.has("win64") == 1 then
@@ -23,4 +23,4 @@ if vim.fn.has("win32") == 1 or vim.fn.has("win64") == 1 then
   end, 5000)
 end
 
-vim.lsp.inlay_hint.enable()
+-- vim.lsp.inlay_hint.enable()

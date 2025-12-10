@@ -164,6 +164,8 @@ fi
 export PATH="/Users/ziyadsfaxi/.config/herd-lite/bin:$PATH"
 export PHP_INI_SCAN_DIR="/Users/ziyadsfaxi/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
 
+# Dotnet
+alias ef="./ef.sh"
 export DOTNET_ROOT="/usr/local/share/dotnet"
 
 export PATH="$PATH:/Users/ziyadsfaxi/.dotnet/tools"
@@ -185,3 +187,6 @@ export HERD_PHP_83_INI_SCAN_DIR="/Users/ziyadsfaxi/Library/Application Support/H
 
 # Herd injected PHP binary.
 export PATH="/Users/ziyadsfaxi/Library/Application Support/Herd/bin/":$PATH
+
+# opencode
+export PATH=/Users/ziyadsfaxi/.opencode/bin:$PATH

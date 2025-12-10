@@ -5,7 +5,6 @@ return {
     picker = {
       files = {
         hidden = true,
-        git_ignore = true,
         exclude = {
           "vendor",
           "node_modules",
@@ -13,6 +12,15 @@ return {
           ".idea",
           "*.lock",
           ".cache",
+        },
+      },
+      sources = {
+        explorer = {
+          hidden = true,
+          git_ignore = true,
+          exclude = {
+            "**/*__virtual.cs",
+          },
         },
       },
     },

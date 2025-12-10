@@ -7,6 +7,8 @@ return {
       "php-debug-adapter",
       "roslyn",
       "csharpier",
+      "rzls",
+      "netcoredbg",
       "html-lsp",
     },
     registries = {
