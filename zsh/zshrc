@@ -138,6 +138,28 @@ composer-github() {
 # Miscellaneous
 #--------------------------------------------------------------------------
 
+# Function to copy the last error (or last line if no error)
+# Takes one optional argument: the number of lines to check (default is 50)
+copy_last_error() {
+  # Set the number of lines to check from the argument, defaulting to 50
+  local check_lines="${1:-50}" 
+  
+  # Check if the last command failed (exit code > 0)
+  if [ $? -ne 0 ]; then
+    # Scan the last $check_lines of history for "error" lines,
+    # exclude "dotnet watch" noise, and copy the last match.
+    history | tail -n "${check_lines}" | grep -E 'error|Error' | \
+      grep -v 'dotnet watch' | tail -n 1 | \
+      pbcopy
+    echo "✅ Last error copied to clipboard (scanned $check_lines lines)."
+  else
+    # If the last command succeeded, just copy the last line of output
+    history | tail -n 1 | pbcopy
+    echo "✅ Last command/line copied to clipboard (scanned $check_lines lines)."
+  fi
+}
+
+
 ### Fix slowness of pastes with zsh-syntax-highlighting.zsh
 pasteinit() {
   OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
@@ -190,3 +212,8 @@ export PATH="/Users/ziyadsfaxi/Library/Application Support/Herd/bin/":$PATH
 
 # opencode
 export PATH=/Users/ziyadsfaxi/.opencode/bin:$PATH
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/ziyadsfaxi/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
