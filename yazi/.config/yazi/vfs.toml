@@ -1,0 +1,5 @@
+[services.hobbysew-222]
+type = "sftp"
+host = "10.0.6.222"
+user = "root"
+port = 22

@@ -79,6 +79,9 @@ export ARTISAN_OPEN_ON_MAKE_EDITOR=nvr
 
 unsetopt sharehistory
 
+# disable auto changing to a directory by just typing its name
+unsetopt AUTO_CD
+
 #--------------------------------------------------------------------------
 # Aliases
 #--------------------------------------------------------------------------
@@ -217,3 +220,6 @@ fpath=(/Users/ziyadsfaxi/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
+
+# Added by Antigravity
+export PATH="/Users/ziyadsfaxi/.antigravity/antigravity/bin:$PATH"

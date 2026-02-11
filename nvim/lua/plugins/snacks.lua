@@ -3,6 +3,10 @@ return {
 
   opts = {
     picker = {
+      layout = {
+        width = 0.95,
+        height = 0.9,
+      },
       files = {
         hidden = true,
         exclude = {
@@ -39,9 +43,9 @@ return {
     {
       "<leader>sf",
       function()
-        Snacks.picker.smart()
+        Snacks.picker.smart({})
       end,
-      desc = "Smart Find Files",
+      desc = "Find Files",
     },
     {
       "<leader>T",

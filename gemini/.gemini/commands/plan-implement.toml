@@ -15,8 +15,7 @@ You are authorized to execute shell commands and modify code.
 
 2.  **Create Worktree:**
     * Run: `git worktree add -b <branch-name> <worktree-path>`
-    * *Example:* `git worktree add -b feature/user-login hobbysew-feature-user-login`
-    * *Note:* We use `-b` here because the folder name (dashed) differs from the branch name (slashed).
+    * *Example:* `git worktree add -b feature/user-login ../hobbysew-feature-user-login`
     * The new worktree should always be placed sibling to the git project holding the plan file.
 
 3.  **Implementation:**

@@ -1,0 +1,13 @@
+# Ignore runtime/cache files
+antigravity
+antigravity-browser-profile
+tmp
+oldtmp
+extensions
+
+# Ignore sensitive/machine-specific files
+oauth_creds.json
+trustedFolders.json
+state.json
+installation_id
+google_accounts.json

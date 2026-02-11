@@ -1,0 +1,21 @@
+os:
+  editPreset: "vscode"
+promptToReturnFromSubprocess: false # removes "press enter to return to lazygit" popup
+customCommands:
+  - key: "<c-w>"
+    context: "localBranches"
+    description: "Open in new tmux session (gwt)"
+    # command: 'osascript -e ''display notification "{{.SelectedLocalBranch.Name}}"'''
+    command: "tmux-gwt {{.SelectedLocalBranch.Name}}"
+    output: terminal
+  - key: "<c-d>"
+    context: "localBranches"
+    description: "Destruct worktree and session (gwd)"
+    command: "tmux-gwd {{.SelectedLocalBranch.Name}}"
+    loadingText: "Cleaning up..."
+    # prompt: "Are you sure you want to delete the worktree and session for {{.SelectedLocalBranch.Name}}?"
+    prompts:
+      - type: "confirm"
+        key: "Confirm"
+        title: "Delete Git Worktree"
+        body: "Are you sure you want to delete the worktree and session for {{.SelectedLocalBranch.Name}}?"

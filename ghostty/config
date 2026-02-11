@@ -9,8 +9,11 @@ fullscreen = true
 mouse-hide-while-typing = true
 
 
-theme = Monokai Pro Octagon
+# theme = Monokai Pro Octagon
+theme = TokyoNight Moon
 
 keybind=super+up=scroll_page_up
 
 keybind = shift+enter=text:\x1b\r
+
+macos-option-as-alt = left
