@@ -59,6 +59,19 @@ if ! tmux has-session -t "$SESSION_NAME" 2>/dev/null; then
 	tmux select-pane -t "$SESSION_NAME.0"
 
 	# tmux send-keys -t "$SESSION_NAME" "nvim ." C-m
+
+	# Create a second window for AI tools
+	tmux new-window -t "$SESSION_NAME" -c "$TARGET_DIR"
+
+	# Check branch name and open appropriate AI tool
+	if [[ "$BRANCH" == *"gemini"* ]]; then
+		tmux send-keys -t "$SESSION_NAME:1" "gemini" C-m
+	elif [[ "$BRANCH" == *"claude"* ]]; then
+		tmux send-keys -t "$SESSION_NAME:1" "claude" C-m
+	fi
+
+	# Switch back to the first window
+	tmux select-window -t "$SESSION_NAME:0"
 fi
 
 # 3. Switch to the session
