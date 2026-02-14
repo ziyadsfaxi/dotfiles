@@ -12,6 +12,14 @@ return {
       cond = require("tmux-status").show,
     })
 
+    -- Add search count before clock
+    table.insert(lualine_z, 1, {
+      "searchcount",
+      cond = function()
+        return vim.v.hlsearch == 1
+      end,
+    })
+
     -- Add the tmux session name to the right section (lualine_z)
     -- You might want to remove the existing clock or other components
     -- if you find it too cluttered.
