@@ -1,5 +1,5 @@
 return {
-  -- enabled = false,
+  enabled = false,
   -- enable = false,
   "zbirenbaum/copilot.lua",
   opts = {
