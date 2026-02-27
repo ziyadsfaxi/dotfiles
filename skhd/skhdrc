@@ -2,7 +2,7 @@ hyper - r : yabai -m space --focus recent
 hyper - n : ~/dotfiles/yabai/focus-next-local-space.sh
 hyper - p : ~/dotfiles/yabai/focus-prev-local-space.sh
 
-hyper - d : yabai -m display --focus recent
+hyper - d : ~/dotfiles/yabai/focus-recent-display-ensure-space.sh
 
 hyper - j : yabai -m window --focus south
 hyper - k : yabai -m window --focus north

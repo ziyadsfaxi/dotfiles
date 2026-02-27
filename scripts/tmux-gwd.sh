@@ -28,9 +28,9 @@ if git worktree list | grep -q "$TARGET_DIR"; then
 fi
 
 # 3. Kill the Tmux Session
-if tmux has-session -t "$BRANCH" 2>/dev/null; then
+if tmux has-session -t "$CLEAN_BRANCH" 2>/dev/null; then
 	echo "Killing tmux session..."
-	tmux kill-session -t "$BRANCH"
+	tmux kill-session -t "$CLEAN_BRANCH"
 fi
 
 # 4. Delete the Branch (Optional - remove the '#' below if you want this)

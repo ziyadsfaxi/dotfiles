@@ -9,3 +9,5 @@
 .gemini/antigravity-browser-profile
 .gemini/extensions
 .gemini/trustedFolders.json
+.gemini/history
+.gemini/projects.json
